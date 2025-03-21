@@ -47,6 +47,9 @@ dependencies {
     runtimeOnly("com.mysql:mysql-connector-j'")
     // jwt
     implementation("io.jsonwebtoken:jjwt:0.9.1")
+
+    // web socket
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
 }
 
 kotlin {
