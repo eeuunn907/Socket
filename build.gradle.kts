@@ -45,11 +45,21 @@ dependencies {
     // db connector
     implementation("mysql:mysql-connector-java:8.0.28")
     runtimeOnly("com.mysql:mysql-connector-j'")
+    
     // jwt
-    implementation("io.jsonwebtoken:jjwt:0.9.1")
+    implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+    runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
     // web socket
     implementation("org.springframework.boot:spring-boot-starter-websocket")
+    
+    // jackson
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    
+    // test
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 kotlin {
