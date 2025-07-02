@@ -57,6 +57,9 @@ dependencies {
     // jackson
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     
+    // openai
+    implementation("com.theokanning.openai-gpt3-java:service:0.18.2")
+    
     // test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
